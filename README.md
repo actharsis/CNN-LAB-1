@@ -1,5 +1,9 @@
 # Обучение нейронной сети,представленной в примере, для решения задачи классификации изображений Food-101
 ## Архитектура нейронной сети
+Файл:
+```
+CNN-food-101-master/train.py
+```
 Нейронная сеть включает в себя один свёрточный слой.
 ```python
 x = tf.keras.layers.Conv2D(filters=8, kernel_size=3)(inputs)
@@ -28,6 +32,10 @@ outputs = tf.keras.layers.Dense(NUM_CLASSES, activation=tf.keras.activations.sof
 ![gr2](https://github.com/actharsis/lab1/blob/main/graph/epoch_loss.svg)
 # Создание и обучение сверточной нейронной сети произвольной архитектуры с количеством сверточных слоев >3
 ## Архитектура нейронной сети
+Файл:
+```
+CNN-food-101-master/train_multiple_layers.py
+```
 Отличия от прошлой нейронной сети заключаются лишь в добавлении 3 дополнительных свёрточных слоёв.
 ```python
 x = tf.keras.layers.Conv2D(filters=8, kernel_size=3)(x)
